@@ -1,38 +1,24 @@
 <!-- app.component.html -->
-<div class="container-fluid p-0">
+<div class="container-fluid">
   <div class="row">
-    <div class="col-6"></div>
-    <div class="col-6">
-      <div class="container-fluid p-0">
-        <!-- Section 1 -->
-        <section
-          class="section-1 d-flex align-items-center justify-content-center text-white"
-        >
-          <div class="container text-center">
-            <h1 class="display-4">Section 1</h1>
-            <p class="lead">This is the first big section.</p>
-          </div>
-        </section>
+    <!-- Fixed Left Column -->
+    <div class="col-md-6" id="fixed-column">
+      <div class="fixed-content">
+        <h2>Fixed Column</h2>
+        <p>This column remains fixed as you scroll the other column.</p>
+      </div>
+    </div>
 
-        <!-- Section 2 -->
-        <section
-          class="section-2 d-flex align-items-center justify-content-center text-white"
-        >
-          <div class="container text-center">
-            <h1 class="display-4">Section 2</h1>
-            <p class="lead">This is the second big section.</p>
-          </div>
-        </section>
-
-        <!-- Section 3 -->
-        <section
-          class="section-3 d-flex align-items-center justify-content-center text-white"
-        >
-          <div class="container text-center">
-            <h1 class="display-4">Section 3</h1>
-            <p class="lead">This is the third big section.</p>
-          </div>
-        </section>
+    <!-- Scrollable Right Column -->
+    <div class="col-md-6 offset-md-6" id="scrollable-column">
+      <div class="scrollable-content">
+        <h2>Scrollable Column</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        <!-- Repeat or add more content to make this column scrollable -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        <!-- Add more content to enable scrolling -->
       </div>
     </div>
   </div>
